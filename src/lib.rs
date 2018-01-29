@@ -20,7 +20,11 @@
 //! patch::patch(&one, &mut cursor, &mut patched).unwrap();
 //! assert_eq!(patched, two);
 //! ```
+#![no_std]
+
 extern crate libc;
+#[macro_use]
+extern crate sgx_tstd as std;
 
 #[allow(dead_code, unused_mut, non_snake_case)]
 pub mod diff;

@@ -10,7 +10,8 @@ homepage = "https://github.com/space-wizards/bsdiff-rs"
 repository = "https://github.com/space-wizards/bsdiff-rs"
 
 [dependencies]
-libc = "0.2.24"
+libc = { git = "https://github.com/ekiden/libc", default-features=false }
+sgx_tstd = { git = "https://github.com/ekiden/rust-sgx-sdk" }
 
 [badges]
 travis-ci = { repository = "space-wizards/bsdiff-rs" }
